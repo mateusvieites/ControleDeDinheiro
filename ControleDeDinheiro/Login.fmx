@@ -1,0 +1,95 @@
+object LoginForm: TLoginForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 480
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 350.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LyBotaoLogin: TLayout
+      Align = Bottom
+      Position.Y = 430.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object BTEntrar: TButton
+        Align = Client
+        Size.Width = 350.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Entrar'
+        OnClick = BTEntrarClick
+      end
+    end
+    object Layout2: TLayout
+      Align = Client
+      Size.Width = 350.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout3: TLayout
+        Align = Horizontal
+        Position.Y = 82.000000000000000000
+        Size.Width = 350.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object TELogin: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          TabOrder = 1
+          Position.Y = 41.000000000000000000
+          Size.Width = 350.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object LBLogin: TLabel
+          Align = Horizontal
+          Position.Y = 16.000000000000000000
+          Size.Width = 350.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Login'
+          TabOrder = 0
+        end
+      end
+      object Layout4: TLayout
+        Align = Horizontal
+        Position.Y = 152.000000000000000000
+        Size.Width = 350.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LBSenha: TLabel
+          Align = Horizontal
+          Position.Y = 16.000000000000000000
+          Size.Width = 350.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Senha'
+          TabOrder = 0
+        end
+        object TESenha: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          TabOrder = 2
+          Password = True
+          Position.Y = 41.000000000000000000
+          Size.Width = 350.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+end
